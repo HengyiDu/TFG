@@ -1,0 +1,75 @@
+¡¡ Atención !!
+
+Ejecutamos roscore para el server.
+
+Lanzando el siguiente comando antes de ejecutar la camara, en RViz, no da error en map y aparece camera_link:
+
+rosrun tf static_transform_publisher 0 0 0 0 0 0 1 map camera_link 10
+
+Ejecutar la cámara siempre con el comando:
+
+roslaunch realsense2_camera rs_camera.launch align_depth:=false enable_color:=false enable_infra1:=false enable_infra2:=false enable_pointcloud:=false allow_no_texture_point_cloud:=true depth_width:=640 depth_height:=480 depth_fps:=30 initial_reset:=true
+
+(Se desactiva la nube de puntos ya que lo vamos a extraer con depth_image_proc en el siguiente comando.
+
+En caso de no ser así, el ancho de banda del USB no soporta la cantidad de datos que transfiere la cámara.
+
+Asumiendo que tenemos el fichero point_cloud_xyz.
+Luego, en otra terminal, ejecutar el comando:
+rosrun nodelet nodelet standalone depth_image_proc/point_cloud_xyz \
+  image_rect:=/camera/depth/image_rect_raw \
+  camera_info:=/camera/depth/camera_info
+
+Ya por último, ejecutar rviz para visualizar la nube de puntos.
+Hace falta cambiar el "Fixed Frame" de Global Options a camera_depth_optical o camera_link.
+
+Comprobar que salgan los tópicos haciendo: rostopic list | grep depth
+Tiene que salir los tópicos de:
+/camera/depth/color/points
+/camera/depth/image_rect_raw
+
+
+Una vez conseguido el entorno con catkin y obtencion de nube de puntos.
+Reconstruir con rosbag desde 3 puntos distintos.
+
+Para lanzar rosbag record, usamos el siguiente comando de terminal:
+Camara 1:
+rosbag record -O record1.bag \
+   /camera/depth/image_rect_raw \
+   /camera/depth/camera_info \
+   /tf
+   
+Camara 2:
+rosbag record -O record2.bag \
+   /camera/depth/image_rect_raw \
+   /camera/depth/camera_info \
+   /tf
+   
+Camara 3:
+rosbag record -O record3.bag \
+   /camera/depth/image_rect_raw \
+   /camera/depth/camera_info \
+   /tf
+   
+Así con las grabaciones, reproduciendolos mostrarlo de la siguiente manera:
+Camara 1:
+rosbag play record1.bag --clock \
+   /camera/depth/image_rect_raw:=/cam1/depth/image_rect_raw \
+   /camera/depth/camera_info:=/cam1/depth/camera_info \
+   /tf:=/tf_cam1
+   
+Camara 2:
+rosbag play record2.bag --clock \
+   /camera/depth/image_rect_raw:=/cam2/depth/image_rect_raw \
+   /camera/depth/camera_info:=/cam2/depth/camera_info \
+   /tf:=/tf_cam2
+   
+Camara 3:
+rosbag play record3.bag --clock \
+   /camera/depth/image_rect_raw:=/cam3/depth/image_rect_raw \
+   
+   
+   
+   /camera/depth/camera_info:=/cam3/depth/camera_info \
+   /tf:=/tf_cam3
+

@@ -1,0 +1,12 @@
+<launch>
+  <!-- Lanza el nodelet point_cloud_xyz -->
+  <node pkg="nodelet" type="nodelet" name="point_cloud_xyz" output="screen"
+        args="standalone depth_image_proc/point_cloud_xyz">
+
+    <!-- Remapeos a los tópicos de profundidad -->
+    <remap from="image_rect"  to="/camera/depth/image_rect_raw"/>
+    <remap from="camera_info" to="/camera/depth/camera_info"/>
+
+  </node>
+</launch>
+
