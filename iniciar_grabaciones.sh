@@ -1,22 +1,22 @@
-#!/bin/sh
+#!/bin/bash
 
-# Terminal 1
-gnome-terminal -- bash -c "rosbag record -O record1.bag \
+cd rosbag_recordings
+
+rosparam set use_sim_time false
+
+rosbag record -O record1.bag \
+  --duration=5 \
   /camera/depth/image_rect_raw \
   /camera/depth/camera_info \
-  /tf; exec bash"
+  /tf
 
+echo "Press Enter to continue..."
 read dummy
 
-# Terminal 2  
-gnome-terminal -- bash -c "rosbag record -O record2.bag \
-  /camera/color/image_raw \
-  /camera/color/camera_info \
-  /tf; exec bash"
+rosbag record -O record2.bag \
+  --duration=5 \
+  /camera/depth/image_rect_raw \
+  /camera/depth/camera_info \
+  /tf
 
-# read dummy
-
-# # Terminal 3
-# gnome-terminal -- bash -c "rosbag record -O record3.bag \
-#   /camera/infra1/image_rect_raw \
-#   /camera/infra1/camera_info; exec bash"
+cd ..

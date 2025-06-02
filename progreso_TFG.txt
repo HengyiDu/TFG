@@ -10,7 +10,7 @@ Ejecutar la cámara siempre con el comando:
 
 roslaunch realsense2_camera rs_camera.launch align_depth:=false enable_color:=false enable_infra1:=false enable_infra2:=false enable_pointcloud:=false allow_no_texture_point_cloud:=true depth_width:=640 depth_height:=480 depth_fps:=30 initial_reset:=true
 
-(Se desactiva la nube de puntos ya que lo vamos a extraer con depth_image_proc en el siguiente comando.
+Se desactiva la nube de puntos ya que lo vamos a extraer con depth_image_proc en el siguiente comando.
 
 En caso de no ser así, el ancho de banda del USB no soporta la cantidad de datos que transfiere la cámara.
 
