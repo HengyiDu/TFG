@@ -1,3 +1,4 @@
 rosbag_recordings/
 catkin_ws/
 librealsense-2.51.1/
+open3d_env/

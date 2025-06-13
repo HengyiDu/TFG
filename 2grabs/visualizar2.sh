@@ -32,6 +32,18 @@ rosrun nodelet nodelet load depth_image_proc/point_cloud_xyz nodelet_manager \
 rosrun nodelet nodelet load depth_image_proc/point_cloud_xyz nodelet_manager \
        __name:=pc_cam2  image_rect:=/cam2/depth/image_rect_raw \
        camera_info:=/cam2/depth/camera_info  points:=/cam2/points &
+# Publicamos las nubes de puntos en formato PCD
+rosrun pcl_ros pointcloud_to_pcd \
+    input:=/cam1/points \
+    _fixed_frame:=cam1_link \
+    _prefix:=cam1_ \
+    _binary:=false &
+
+rosrun pcl_ros pointcloud_to_pcd \
+    input:=/cam2/points \
+    _fixed_frame:=cam1_link \
+    _prefix:=cam2_ \
+    _binary:=false &
 # Publicamos las imágenes de las cámaras
 rosrun relay_tools relay_cam2.py &
 # Iniciamos RViz para visualizar los datos
