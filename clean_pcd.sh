@@ -16,20 +16,20 @@ TMP_X=$(mktemp --suffix=.pcd)
 TMP_Y=$(mktemp --suffix=.pcd)
 TMP_S=$(mktemp --suffix=.pcd)
 
-echo "① Passthrough Z [$ZMIN,$ZMAX]..."
+echo "1 Passthrough Z [$ZMIN,$ZMAX]..."
 pcl_passthrough_filter "$IN" "$TMP_Z" z "$ZMIN" "$ZMAX"
 
-echo "② Passthrough X (±$XY m)..."
+echo "2 Passthrough X (±$XY m)..."
 pcl_passthrough_filter "$TMP_Z" "$TMP_X" x "-$XY" "$XY"
 
-echo "③ Passthrough Y (±$XY m)..."
+echo "3 Passthrough Y (±$XY m)..."
 pcl_passthrough_filter "$TMP_X" "$TMP_Y" y "-$XY" "$XY"
 
-echo "④ Statistical Outlier Removal (K=$MEANK, σ=$STD)..."
+echo "4 Statistical Outlier Removal (K=$MEANK, σ=$STD)..."
 pcl_outlier_removal "$TMP_Y" "$TMP_S" -method statistical -meanK "$MEANK" -stddevMulThresh "$STD"
 
-echo "⑤ VoxelGrid (leaf=$VOX m)..."
+echo "5 VoxelGrid (leaf=$VOX m)..."
 pcl_voxel_grid "$TMP_S" "$OUT" -leaf "$VOX" "$VOX" "$VOX"
 
 rm -f "$TMP_Z" "$TMP_X" "$TMP_Y" "$TMP_S"
-echo "✅ Nube filtrada guardada en $OUT"
+echo "-------- Nube filtrada guardada en $OUT--------"

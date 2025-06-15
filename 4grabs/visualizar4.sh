@@ -52,30 +52,6 @@ rosrun nodelet nodelet load depth_image_proc/point_cloud_xyz nodelet_manager \
        __name:=pc_cam4  image_rect:=/cam4/depth/image_rect_raw \
        camera_info:=/cam4/depth/camera_info  points:=/cam4/points &
 
-rosrun pcl_ros pointcloud_to_pcd \
-    input:=/cam1/points \
-    _fixed_frame:=cam1_link \
-    _prefix:=cam1_ \
-    _binary:=false &
-
-rosrun pcl_ros pointcloud_to_pcd \
-    input:=/cam2/points \
-    _fixed_frame:=cam1_link \
-    _prefix:=cam2_ \
-    _binary:=false &
-
-rosrun pcl_ros pointcloud_to_pcd \
-    input:=/cam3/points \
-    _fixed_frame:=cam1_link \
-    _prefix:=cam3_ \
-    _binary:=false &
-
-rosrun pcl_ros pointcloud_to_pcd \
-    input:=/cam4/points \
-    _fixed_frame:=cam1_link \
-    _prefix:=cam4_ \
-    _binary:=false &
-
 # Publicamos las imágenes de las cámaras
 rosrun relay_tools relay_cam2.py &
 rosrun relay_tools relay_cam3.py &

@@ -3,7 +3,7 @@ En el script de fusion_limpieza, completar los nombres de los ficheros con los q
 Una vez ejecutado el script, con el output_clean.pcd de la correspondiente configuración, usar el script
 de Python para analizar dimensiones, densidad y ruido.
 
-python3 eval_intrinseco 2grabs/output_clean.pcd
+python3 evaluar 2grabs/output_clean.pcd
 
 
 Para analizar la complejidad, con el script anterior de fusion_limpieza.sh, monstrar un log del sistema:
