@@ -67,9 +67,6 @@ rosbag play record2.bag --clock \
 Camara 3:
 rosbag play record3.bag --clock \
    /camera/depth/image_rect_raw:=/cam3/depth/image_rect_raw \
-   
-   
-   
    /camera/depth/camera_info:=/cam3/depth/camera_info \
    /tf:=/tf_cam3
 

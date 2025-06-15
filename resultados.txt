@@ -1,0 +1,67 @@
+Resultados de métricas
+
+1. Bote de proteínas.
+    2 Grabaciones:
+        Medidas:
+            AABB (mm): 410.7 × 298.4 × 451.0
+            Densidad XY: 7.19 pt/cm²
+            Ruido Z (σ): 49.79 mm
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:02.58
+            Max. memoria pico: 75020 KB
+            File system output: 8848
+
+            2da vez:
+            Tiempo transcurrido: 0:02.50
+            Max. memoria pico: 75140 KB
+            File system output: 8848
+
+            3ra vez:
+            Tiempo transcurrido: 0:02.46
+            Max. memoria pico: 75100 KB
+            File system output: 8848
+
+    3 Grabaciones:
+        Medidas:
+            AABB (mm): 421.4 × 280.8 × 355.4
+            Densidad XY: 8.94 pt/cm²
+            Ruido Z (σ): 51.92 mm
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:03.75
+            Max. memoria pico: 98280 KB
+            File system output: 13776
+
+            2da vez:
+            Tiempo transcurrido: 0:03.79
+            Max. memoria pico: 98436 KB
+            File system output: 13776
+
+            3ra vez:
+            Tiempo transcurrido: 0:03.70
+            Max. memoria pico: 98436 KB
+            File system output: 13776
+        
+    4 Grabaciones:
+        Medidas:
+            AABB (mm): 398.7 × 322.5 × 464.9
+            Densidad XY: 7.83 pt/cm²
+            Ruido Z (σ): 98.97 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:04.57
+            Max. memoria pico: 123892 KB
+            File system output: 15864
+
+            2da vez:
+            Tiempo transcurrido: 0:04.53
+            Max. memoria pico: 124056 KB
+            File system output: 15864
+
+            3ra vez:
+            Tiempo transcurrido: 0:04.62
+            Max. memoria pico: 123892 KB
+            File system output: 15864
+            

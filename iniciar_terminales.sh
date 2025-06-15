@@ -1,8 +1,6 @@
 #!/bin/bash
 gnome-terminal -- bash -c "roscore; exec bash"
-
 sleep 2  # Esperamos a que roscore inicie
-
 gnome-terminal -- bash -c "roslaunch realsense2_camera rs_camera.launch \
   align_depth:=false \
   enable_color:=false \
