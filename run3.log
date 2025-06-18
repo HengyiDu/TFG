@@ -1,0 +1,69 @@
+> Loading 4grabs/transformed_pcds/cam1_1.pcd [done, 768.353 ms : 307200 points]
+Available dimensions: x y z
+Total number of points so far: 307200. Total data size: 3686400 bytes.
+> Loading 4grabs/transformed_pcds/cam2_0.pcd [done, 776.804 ms : 307200 points]
+Available dimensions: x y z
+Total number of points so far: 614400. Total data size: 7372800 bytes.
+> Loading 4grabs/transformed_pcds/cam3_1.pcd [done, 773.695 ms : 307200 points]
+Available dimensions: x y z
+Total number of points so far: 921600. Total data size: 11059200 bytes.
+> Loading 4grabs/transformed_pcds/cam4_1.pcd [done, 805.326 ms : 307200 points]
+Available dimensions: x y z
+Total number of points so far: 1228800. Total data size: 14745600 bytes.
+> Saving output.pcd [done, 246.497 ms : 1228800 points]
+1 Passthrough Z [0.1,0.2]...
+> Computing Filter a point cloud using the pcl::PassThroughFilterEstimate. For more information, use: pcl_passthrough_filter -h
+> Loading output.pcd [done, 57.2109 ms : 1228800 points]
+Available dimensions: x y z
+[done, 65.5637 ms : 1228800 points]
+> Saving /tmp/tmp.GZK3MvHgpb.pcd [done, 61.1531 ms : 1228800 points]
+2 Passthrough X (±0.30 m)...
+> Computing Filter a point cloud using the pcl::PassThroughFilterEstimate. For more information, use: pcl_passthrough_filter -h
+> Loading /tmp/tmp.GZK3MvHgpb.pcd [done, 51.333 ms : 1228800 points]
+Available dimensions: x y z
+[done, 58.7685 ms : 1228800 points]
+> Saving /tmp/tmp.nw3WuMwVAC.pcd [done, 59.6251 ms : 1228800 points]
+3 Passthrough Y (±0.30 m)...
+> Computing Filter a point cloud using the pcl::PassThroughFilterEstimate. For more information, use: pcl_passthrough_filter -h
+> Loading /tmp/tmp.nw3WuMwVAC.pcd [done, 51.9145 ms : 1228800 points]
+Available dimensions: x y z
+[done, 63.4284 ms : 1228800 points]
+> Saving /tmp/tmp.UaDrtIQgWw.pcd [done, 60.0848 ms : 1228800 points]
+4 Statistical Outlier Removal (K=40, σ=0.8)...
+Statistical Outlier Removal filtering of a point cloud. For more information, use: pcl_outlier_removal -h
+> Loading /tmp/tmp.UaDrtIQgWw.pcd [done, 55.2026 ms : 1228800 points]
+Available dimensions: x y z
+Computing filtered cloud from 39663 points with mean_k 2, std_dev_mul 0.000000, inliers 0 ...[done, 73.9296 ms : 27962 points, 11701 indices removed]
+> Saving /tmp/tmp.v1ocqY5R2y.pcd [done, 49.2085 ms : 1217099 points]
+5 VoxelGrid (leaf=0.003 m)...
+Downsample a cloud using pcl::VoxelGrid. For more information, use: pcl_voxel_grid -h
+Using a leaf size of: 0.003000, 0.003000, 0.003000
+Filtering data on field: z between: -inf ->inf
+> Loading /tmp/tmp.v1ocqY5R2y.pcd [done, 51.7137 ms : 1217099 points]
+Available dimensions: x y z
+> Computing [done, 17.3069 ms : 4266 points]
+> Saving 4grabs/output_clean.pcd [done, 1.59914 ms : 4266 points]
+-------- Nube filtrada guardada en 4grabs/output_clean.pcd--------
+	Command being timed: "./fusion_limpieza.sh"
+	User time (seconds): 3.80
+	System time (seconds): 0.61
+	Percent of CPU this job got: 97%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.51
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 117940
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1233
+	Minor (reclaiming a frame) page faults: 171844
+	Voluntary context switches: 33
+	Involuntary context switches: 461
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 9864
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

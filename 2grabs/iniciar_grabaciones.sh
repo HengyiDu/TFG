@@ -8,7 +8,6 @@ rosbag record -O record1.bag \
   --duration=5 \
   /camera/depth/image_rect_raw \
   /camera/depth/camera_info \
-  /camera/depth/points \
   /tf
 
 echo "Press Enter to continue..."
@@ -18,7 +17,6 @@ rosbag record -O record2.bag \
   --duration=5 \
   /camera/depth/image_rect_raw \
   /camera/depth/camera_info \
-  /camera/depth/points \
   /tf
 
 cd ..

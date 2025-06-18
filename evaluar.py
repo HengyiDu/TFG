@@ -32,6 +32,6 @@ if __name__ == "__main__":
         sys.exit("La nube quedó vacía tras eliminar NaN.")
 
     dx, dy, dz = aabb_dims(cloud)
-    print(f"AABB (mm): {dx*1000:.1f} × {dy*1000:.1f} × {dz*1000:.1f}")
+    print(f"AABB (mm): {dx*1000:.1f} x {dy*1000:.1f} x {dz*1000:.1f}")
     print(f"Densidad XY: {dens_xy(cloud, dx, dy):.2f} pt/cm²")
-    print(f"Ruido Z (σ): {ruido_z(cloud)*1000:.2f} mm")
+    print(f"Ruido Z: {ruido_z(cloud)*1000:.2f} mm")

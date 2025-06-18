@@ -3,65 +3,267 @@ Resultados de métricas
 1. Bote de proteínas.
     2 Grabaciones:
         Medidas:
-            AABB (mm): 410.7 × 298.4 × 451.0
-            Densidad XY: 7.19 pt/cm²
-            Ruido Z (σ): 49.79 mm
+            AABB (mm): 166.4 × 465.3 × 158.4
+            Densidad XY: 5.06 pt/cm²
+            Ruido Z (σ): 46.69 mm
+
         Complejidad(3 veces):
             1ra vez:
-            Tiempo transcurrido (m:ss): 0:02.58
-            Max. memoria pico: 75020 KB
-            File system output: 8848
+            Tiempo transcurrido (m:ss): 0:02.25
+            Max. memoria pico: 73904 KB
+            File system output: 4104
 
             2da vez:
-            Tiempo transcurrido: 0:02.50
-            Max. memoria pico: 75140 KB
-            File system output: 8848
+            Tiempo transcurrido: 0:02.28
+            Max. memoria pico: 73812 KB
+            File system output: 4104
 
             3ra vez:
-            Tiempo transcurrido: 0:02.46
-            Max. memoria pico: 75100 KB
-            File system output: 8848
+            Tiempo transcurrido: 0:02.27
+            Max. memoria pico: 73932 KB
+            File system output: 4104
 
     3 Grabaciones:
         Medidas:
-            AABB (mm): 421.4 × 280.8 × 355.4
-            Densidad XY: 8.94 pt/cm²
-            Ruido Z (σ): 51.92 mm
+            AABB (mm): 216.4 × 255.9 × 172.0
+            Densidad XY: 13.42 pt/cm²
+            Ruido Z (σ): 54.98 mm
         Complejidad(3 veces):
             1ra vez:
-            Tiempo transcurrido (m:ss): 0:03.75
-            Max. memoria pico: 98280 KB
-            File system output: 13776
+            Tiempo transcurrido (m:ss): 0:03.26
+            Max. memoria pico: 94812 KB
+            File system output: 7840
 
             2da vez:
-            Tiempo transcurrido: 0:03.79
-            Max. memoria pico: 98436 KB
-            File system output: 13776
+            Tiempo transcurrido: 0:03.35
+            Max. memoria pico: 94972 KB
+            File system output: 7840
 
             3ra vez:
-            Tiempo transcurrido: 0:03.70
-            Max. memoria pico: 98436 KB
-            File system output: 13776
-        
+            Tiempo transcurrido: 0:03.33
+            Max. memoria pico: 94772 KB
+            File system output: 7840
+    
     4 Grabaciones:
         Medidas:
-            AABB (mm): 398.7 × 322.5 × 464.9
-            Densidad XY: 7.83 pt/cm²
-            Ruido Z (σ): 98.97 mm
+            AABB (mm): 197.9 × 258.6 × 153.0
+            Densidad XY: 11.96 pt/cm²
+            Ruido Z (σ): 46.77 mm
 
         Complejidad(3 veces):
             1ra vez:
-            Tiempo transcurrido (m:ss): 0:04.57
-            Max. memoria pico: 123892 KB
-            File system output: 15864
+            Tiempo transcurrido (m:ss): 0:03.80
+            Max. memoria pico: 117888 KB
+            File system output: 7472
 
             2da vez:
-            Tiempo transcurrido: 0:04.53
-            Max. memoria pico: 124056 KB
-            File system output: 15864
+            Tiempo transcurrido: 0:03.90
+            Max. memoria pico: 118352 KB
+            File system output: 7472
 
             3ra vez:
-            Tiempo transcurrido: 0:04.62
-            Max. memoria pico: 123892 KB
-            File system output: 15864
-            
+            Tiempo transcurrido: 0:03.93
+            Max. memoria pico: 118188 KB
+            File system output: 7472
+
+2. Monedero.
+    2 Grabaciones:
+        Medidas:
+            AABB (mm): 112.3 × 70.7 × 68.9
+            Densidad XY: 16.63 pt/cm²
+            Ruido Z (σ): 19.70 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:02.48
+            Max. memoria pico: 72784 KB
+            File system output: 5216
+
+            2da vez:
+            Tiempo transcurrido: 0:02.59
+            Max. memoria pico: 72908 KB
+            File system output: 5216
+
+            3ra vez:
+            Tiempo transcurrido: 0:02.51
+            Max. memoria pico: 73120 KB
+            File system output: 5216
+
+    3 Grabaciones:
+        Medidas:
+            AABB (mm): 142.7 × 119.1 × 72.5
+            Densidad XY: 9.56 pt/cm²
+            Ruido Z (σ): 17.94 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:02.40
+            Max. memoria pico: 94620 KB
+            File system output: 4096
+
+            2da vez:
+            Tiempo transcurrido: 0:02.45
+            Max. memoria pico: 94972 KB
+            File system output: 4096
+
+            3ra vez:
+            Tiempo transcurrido: 0:02.34
+            Max. memoria pico: 94932 KB
+            File system output: 4096
+    
+    4 Grabaciones:
+        Medidas:
+            AABB (mm): 197.9 × 258.6 × 153.0
+            Densidad XY: 11.96 pt/cm²
+            Ruido Z (σ): 46.77 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:04.31
+            Max. memoria pico: 118000 KB
+            File system output: 9520
+
+            2da vez:
+            Tiempo transcurrido: 0:04.29
+            Max. memoria pico: 118100 KB
+            File system output: 9520
+
+            3ra vez:
+            Tiempo transcurrido: 0:04.22
+            Max. memoria pico: 118188 KB
+            File system output: 9520
+
+3. Caja de huevos.
+    2 Grabaciones:
+        Medidas:
+            AABB (mm): 274.1 × 273.4 × 249.8
+            Densidad XY: 16.18 pt/cm²
+            Ruido Z (σ): 65.98 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:02.72
+            Max. memoria pico: 74992 KB
+            File system output: 8280
+
+            2da vez:
+            Tiempo transcurrido: 0:02.70
+            Max. memoria pico: 74624 KB
+            File system output: 8280
+
+            3ra vez:
+            Tiempo transcurrido: 0:02.76
+            Max. memoria pico: 74808 KB
+            File system output: 8280
+
+    3 Grabaciones:
+        Medidas:
+            AABB (mm): 424.8 × 213.4 × 266.6
+            Densidad XY: 23.31 pt/cm²
+            Ruido Z (σ): 72.03 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:04.02
+            Max. memoria pico: 96640 KB
+            File system output: 14792
+
+            2da vez:
+            Tiempo transcurrido: 0:03.90
+            Max. memoria pico: 96676 KB
+            File system output: 14792
+
+            3ra vez:
+            Tiempo transcurrido: 0:03.97
+            Max. memoria pico: 96624 KB
+            File system output: 14792
+    
+    4 Grabaciones:
+        Medidas:
+            AABB (mm): 335.4 × 342.6 × 282.5
+            Densidad XY: 15.34 pt/cm²
+            Ruido Z (σ): 78.18 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:04.61
+            Max. memoria pico:  118460 KB
+            File system output: 13536
+
+            2da vez:
+            Tiempo transcurrido: 0:04.50
+            Max. memoria pico: 118412 KB
+            File system output: 13536
+
+            3ra vez:
+            Tiempo transcurrido: 0:04.53
+            Max. memoria pico: 118412 KB
+            File system output: 13536
+
+4. Trofeo.
+    2 Grabaciones:
+        Medidas:
+            AABB (mm): 233.6 × 66.0 × 142.5
+            Densidad XY: 23.02 pt/cm²
+            Ruido Z (σ): 32.27 mm
+
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:02.69
+            Max. memoria pico: 73732 KB
+            File system output: 6144
+
+            2da vez:
+            Tiempo transcurrido: 0:02.71
+            Max. memoria pico: 73624 KB
+            File system output: 6144
+
+            3ra vez:
+            Tiempo transcurrido: 0:02.66
+            Max. memoria pico: 73640 KB
+            File system output: 6144
+
+    3 Grabaciones:
+        Medidas:
+            AABB (mm): 305.4 × 129.8 × 150.0
+            Densidad XY: 14.53 pt/cm²
+            Ruido Z (σ): 33.95 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:03.70
+            Max. memoria pico: 94884 KB
+            File system output: 10056
+
+            2da vez:
+            Tiempo transcurrido: 0:03.71
+            Max. memoria pico: 94768 KB
+            File system output: 10056
+
+            3ra vez:
+            Tiempo transcurrido: 0:03.72
+            Max. memoria pico: 94740 KB
+            File system output: 10056
+    
+    4 Grabaciones:
+        Medidas:
+            AABB (mm): 239.2 × 187.0 × 156.8
+            Densidad XY: 9.53 pt/cm²
+            Ruido Z (σ): 36.71 mm
+
+        Complejidad(3 veces):
+            1ra vez:
+            Tiempo transcurrido (m:ss): 0:04.36
+            Max. memoria pico:  117684 KB
+            File system output: 9864
+
+            2da vez:
+            Tiempo transcurrido: 0:04.51
+            Max. memoria pico: 117792 KB
+            File system output: 9864
+
+            3ra vez:
+            Tiempo transcurrido: 0:04.51
+            Max. memoria pico: 117940 KB
+            File system output: 9864

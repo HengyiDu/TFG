@@ -1,0 +1,63 @@
+> Loading 2grabs/transformed_pcds/cam1_1.pcd [done, 889.46 ms : 307200 points]
+Available dimensions: x y z
+Total number of points so far: 307200. Total data size: 3686400 bytes.
+> Loading 2grabs/transformed_pcds/cam2_0.pcd [done, 891.96 ms : 307200 points]
+Available dimensions: x y z
+Total number of points so far: 614400. Total data size: 7372800 bytes.
+> Saving output.pcd [done, 71.2646 ms : 614400 points]
+1 Passthrough Z [0.1,0.25]...
+> Computing Filter a point cloud using the pcl::PassThroughFilterEstimate. For more information, use: pcl_passthrough_filter -h
+> Loading output.pcd [done, 31.9177 ms : 614400 points]
+Available dimensions: x y z
+[done, 29.7949 ms : 614400 points]
+> Saving /tmp/tmp.pWRMmGfGU1.pcd [done, 35.7233 ms : 614400 points]
+2 Passthrough X (±0.3 m)...
+> Computing Filter a point cloud using the pcl::PassThroughFilterEstimate. For more information, use: pcl_passthrough_filter -h
+> Loading /tmp/tmp.pWRMmGfGU1.pcd [done, 28.5762 ms : 614400 points]
+Available dimensions: x y z
+[done, 29.625 ms : 614400 points]
+> Saving /tmp/tmp.4W8Moh7xU1.pcd [done, 39.5314 ms : 614400 points]
+3 Passthrough Y (±0.3 m)...
+> Computing Filter a point cloud using the pcl::PassThroughFilterEstimate. For more information, use: pcl_passthrough_filter -h
+> Loading /tmp/tmp.4W8Moh7xU1.pcd [done, 29.0895 ms : 614400 points]
+Available dimensions: x y z
+[done, 29.6189 ms : 614400 points]
+> Saving /tmp/tmp.EtBjHuKLFK.pcd [done, 34.7416 ms : 614400 points]
+4 Statistical Outlier Removal (K=50, σ=0.8)...
+Statistical Outlier Removal filtering of a point cloud. For more information, use: pcl_outlier_removal -h
+> Loading /tmp/tmp.EtBjHuKLFK.pcd [done, 27.8591 ms : 614400 points]
+Available dimensions: x y z
+Computing filtered cloud from 88678 points with mean_k 2, std_dev_mul 0.000000, inliers 0 ...[done, 165.339 ms : 49535 points, 39143 indices removed]
+> Saving /tmp/tmp.I2aYxugii8.pcd [done, 24.7078 ms : 575257 points]
+5 VoxelGrid (leaf=0.003 m)...
+Downsample a cloud using pcl::VoxelGrid. For more information, use: pcl_voxel_grid -h
+Using a leaf size of: 0.003000, 0.003000, 0.003000
+Filtering data on field: z between: -inf ->inf
+> Loading /tmp/tmp.I2aYxugii8.pcd [done, 24.3722 ms : 575257 points]
+Available dimensions: x y z
+> Computing [done, 11.0279 ms : 3550 points]
+> Saving 2grabs/output_clean.pcd [done, 1.25103 ms : 3550 points]
+-------- Nube filtrada guardada en 2grabs/output_clean.pcd--------
+	Command being timed: "./fusion_limpieza.sh"
+	User time (seconds): 2.28
+	System time (seconds): 0.39
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:02.69
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 73696
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 768
+	Minor (reclaiming a frame) page faults: 89569
+	Voluntary context switches: 30
+	Involuntary context switches: 270
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 6144
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

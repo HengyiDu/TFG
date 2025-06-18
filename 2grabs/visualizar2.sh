@@ -9,9 +9,9 @@ cd rosbag_recordings
 # Uso del tiempo simulado
 rosparam set use_sim_time true
 # Publicamos las transformaciones estaticas
-rosrun tf2_ros static_transform_publisher 1 0 0 0 0 -1.5708 \
+rosrun tf2_ros static_transform_publisher 0 0 0 0 0 -1.5708 \
       cam1_link camera_depth_optical_frame      __name:=tf_opt_cam1 &
-rosrun tf2_ros static_transform_publisher 0 0 1 0 3.1416 0 \
+rosrun tf2_ros static_transform_publisher 0 0 0.6 0 3.1416 0 \
       camera_depth_optical_frame camera2_depth_optical_frame     __name:=tf_opt_cam2 &
 # Reproducimos las grabaciones de rosbag
 rosbag play --clock -l record1.bag \

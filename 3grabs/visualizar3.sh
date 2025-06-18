@@ -11,9 +11,9 @@ rosparam set use_sim_time true
 # Publicamos las transformaciones estáticas
 rosrun tf2_ros static_transform_publisher 0 0 0 -1.04 0 -1.5708 \
       cam1_link camera_depth_optical_frame      __name:=tf_opt_cam1 &
-rosrun tf2_ros static_transform_publisher 1 0 0 1.047 0 -1.5708 \
+rosrun tf2_ros static_transform_publisher 0.6 0 0 1.047 0 -1.5708 \
       cam1_link camera2_depth_optical_frame     __name:=tf_opt_cam2 &
-rosrun tf2_ros static_transform_publisher 0.5 0.866 0 3.1416 0 -1.5708 \
+rosrun tf2_ros static_transform_publisher 0.3 0.5196 0 3.1416 0 -1.5708 \
       cam1_link camera3_depth_optical_frame    __name:=tf_opt_cam3 &
 # Reproducimos las grabaciones de rosbag
 rosbag play --clock -l record1.bag \
@@ -45,24 +45,6 @@ rosrun nodelet nodelet load depth_image_proc/point_cloud_xyz nodelet_manager \
 # Publicamos las imágenes de las cámaras
 rosrun relay_tools relay_cam2.py &
 rosrun relay_tools relay_cam3.py &
-
-# rosrun pcl_ros pointcloud_to_pcd \
-#     input:=/cam1/points \
-#     _fixed_frame:=cam1_link \
-#     _prefix:=cam1_ \
-#     _binary:=false &
-
-# rosrun pcl_ros pointcloud_to_pcd \
-#     input:=/cam2/points_fixed \
-#     _fixed_frame:=cam1_link \
-#     _prefix:=cam2_ \
-#     _binary:=false &
-
-# rosrun pcl_ros pointcloud_to_pcd \
-#     input:=/cam3/points_fixed \
-#     _fixed_frame:=cam1_link \
-#     _prefix:=cam3_ \
-#     _binary:=false &
 
 sleep 1
 # Iniciamos RViz para visualizar los datos
